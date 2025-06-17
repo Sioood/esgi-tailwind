@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EXAM</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body class="bg-gray-100 flex flex-col items-center">
     <nav
@@ -37,13 +37,16 @@
       </div>
     </nav>
 
-    <main class="w-5xl flex flex-col gap-4">
-
+    <main class="w-5xl flex flex-col items-center gap-4">
       <section
-        class="relative py-4 px-6 flex items-center text-white justify-between bg-gradient-to-br from-indigo-500 to-purple-500 p-1 rounded-xl overflow-hidden"
+        class="w-full relative py-4 px-6 flex items-center text-white justify-between bg-gradient-to-br from-indigo-500 to-purple-500 p-1 rounded-xl overflow-hidden"
       >
-      <span class="absolute bottom-0 left-0 size-40 bg-white/20 rounded-full -translate-x-1/2 translate-y-1/2"></span>
-      <span class="absolute top-0 right-0 size-50 bg-white/20 rounded-full translate-x-1/2 -translate-y-1/2"></span>
+        <span
+          class="absolute bottom-0 left-0 size-40 bg-white/20 rounded-full -translate-x-1/2 translate-y-1/2"
+        ></span>
+        <span
+          class="absolute top-0 right-0 size-50 bg-white/20 rounded-full translate-x-1/2 -translate-y-1/2"
+        ></span>
 
         <div class="z-10 flex flex-col gap-1">
           <h2 class="text-lg font-semibold">Paris, France</h2>
@@ -65,58 +68,72 @@
           <span class="text-xs">Min: 18°C</span>
         </div>
       </section>
-      
-      <section class="flex gap-4">
-        <div class="flex flex-wrap gap-6">
-          <div class="flex flex-col bg-white rounded-xl px-8 py-5 shadow-md">
-            <div class="flex gap-6 justify-between items-center mb-4">
-              <p>Indive UV</p>
-              <i class="stroke-orange-500 fill-orange-500"  data-lucide="sun"></i>
-            </div>
-            <p class="font-medium text-3xl">7</p>
-            <div class="w-full bg-gray-200 mb-2 rounded-full h-1.5">
-              <div class="bg-orange-500 h-1.5 rounded-full" style="width: 60%;"></div>
-            </div>
-            <p class="text-gray-600">Elevé</p>
-          </div>
 
-          <div class="flex flex-col bg-white rounded-xl px-8 py-5 shadow-md">
-            <div class="flex gap-6 justify-between items-center mb-4">
-              <p>Humidité</p>
-              <i class="stroke-blue-500 fill-blue-500"  data-lucide="sun"></i>
-            </div>
-            <p class="font-medium text-3xl">68 %</p>
-            <div class="w-full bg-gray-200 mb-2 rounded-full h-1.5">
-              <div class="bg-blue-500 h-1.5 rounded-full" style="width: 60%;"></div>
-            </div>
-            <p class="text-gray-600">Elevé</p>
+      <section class="flex flex-wrap gap-4">
+        <div class="flex flex-col bg-white rounded-xl px-8 py-5 shadow-md">
+          <div class="flex gap-6 justify-between items-center mb-4">
+            <p>Indive UV</p>
+            <i class="stroke-orange-500 fill-orange-500" data-lucide="sun"></i>
           </div>
-
-          <div class="flex flex-col bg-white rounded-xl px-8 py-5 shadow-md">
-            <div class="flex gap-6 justify-between items-center mb-4">
-              <p>Vent</p>
-              <i class="bg-gray-100 rounded-full stroke-gray-400 "  data-lucide="arrow-up"></i>
-            </div>
-            <p class="font-medium text-3xl">12</p>
-            <p class="font-gray-500">km/h Nord-Est</p>
-            <p class="text-gray-600">Elevé</p>
-            <i class="mt-3 bg-gray-100 rounded-full stroke-gray-400"  data-lucide="arrow-down-right"></i>
+          <p class="font-medium text-3xl">7</p>
+          <div class="w-full bg-gray-200 mb-2 rounded-full h-1.5">
+            <div
+              class="bg-orange-500 h-1.5 rounded-full"
+              style="width: 60%"
+            ></div>
           </div>
+          <p class="text-gray-600">Elevé</p>
+        </div>
 
-          <div class="flex flex-col bg-white rounded-xl px-8 py-5 shadow-md">
-            <div class="flex gap-6 justify-between items-center mb-4">
-              <p>Pression</p>
-              <i class="bg-gray-100 rounded-full stroke-gray-400 "  data-lucide="arrow-up"></i>
-            </div>
-            <p class="font-medium text-3xl">1013</p>
-            <p class="font-gray-500">hPa</p>
-            <div class="flex items-center text-green-500 gap-1">
-              <i data-lucide="chevron-up"></i>
-              <span class="text-sm font-medium">Stable</span>
-            </div>
+        <div class="flex flex-col bg-white rounded-xl px-8 py-5 shadow-md">
+          <div class="flex gap-6 justify-between items-center mb-4">
+            <p>Humidité</p>
+            <i class="stroke-blue-500 fill-blue-500" data-lucide="sun"></i>
+          </div>
+          <p class="font-medium text-3xl">68 %</p>
+          <div class="w-full bg-gray-200 mb-2 rounded-full h-1.5">
+            <div
+              class="bg-blue-500 h-1.5 rounded-full"
+              style="width: 60%"
+            ></div>
+          </div>
+          <p class="text-gray-600">Elevé</p>
+        </div>
+
+        <div class="flex flex-col bg-white rounded-xl px-8 py-5 shadow-md">
+          <div class="flex gap-6 justify-between items-center mb-4">
+            <p>Vent</p>
+            <i
+              class="bg-gray-100 rounded-full stroke-gray-400"
+              data-lucide="arrow-up"
+            ></i>
+          </div>
+          <p class="font-medium text-3xl">12</p>
+          <p class="font-gray-500">km/h Nord-Est</p>
+          <p class="text-gray-600">Elevé</p>
+          <i
+            class="mt-3 bg-gray-100 rounded-full stroke-gray-400"
+            data-lucide="arrow-down-right"
+          ></i>
+        </div>
+
+        <div class="flex flex-col bg-white rounded-xl px-8 py-5 shadow-md">
+          <div class="flex gap-6 justify-between items-center mb-4">
+            <p>Pression</p>
+            <i
+              class="bg-gray-100 rounded-full stroke-gray-400"
+              data-lucide="arrow-up"
+            ></i>
+          </div>
+          <p class="font-medium text-3xl">1013</p>
+          <p class="font-gray-500">hPa</p>
+          <div class="flex items-center text-green-500 gap-1">
+            <i data-lucide="chevron-up"></i>
+            <span class="text-sm font-medium">Stable</span>
           </div>
         </div>
       </section>
+
       <section class="flex gap-4">
         <div class="w-2/3 bg-white rounded-lg">
           <!-- LEFT -->
