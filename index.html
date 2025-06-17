@@ -7,16 +7,27 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body class="bg-gray-100 flex flex-col items-center">
-    <nav class="w-full flex items-center justify-center shadow bg-white p-2">
+    <nav
+      class="w-full flex items-center justify-center shadow bg-white p-2 mb-6"
+    >
       <div class="w-5xl flex gap-4 items-center justify-between">
         <div class="inline-flex items-center">
-          <i class="m-2 size-5 fill-white stroke-white bg-gradient-to-br from-indigo-500 to-purple-500 p-1 rounded" data-lucide="sun"></i>
+          <i
+            class="m-2 size-5 fill-white stroke-white bg-gradient-to-br from-indigo-500 to-purple-500 p-1 rounded"
+            data-lucide="sun"
+          ></i>
           <span class="font-black">WeatherPro</span>
         </div>
         <div class="inline-flex gap-2">
           <label for="search" class="border border-gray-300 rounded flex">
             <i class="m-2 size-4 stroke-gray-300" data-lucide="search"></i>
-            <input type="search" name="search" id="search" placeholder="Rechercher une ville..." class="placeholder-gray-300">
+            <input
+              type="search"
+              name="search"
+              id="search"
+              placeholder="Rechercher une ville..."
+              class="placeholder-gray-300"
+            />
           </label>
 
           <button class="hover:bg-gray-200 rounded cursor-pointer">
@@ -27,9 +38,34 @@
     </nav>
 
     <main class="w-5xl flex flex-col gap-4">
-      <section>
-        <!-- Gradient card -->
+
+      <section
+        class="relative py-4 px-6 flex items-center text-white justify-between bg-gradient-to-br from-indigo-500 to-purple-500 p-1 rounded-xl overflow-hidden"
+      >
+      <span class="absolute bottom-0 left-0 size-40 bg-white/20 rounded-full -translate-x-1/2 translate-y-1/2"></span>
+      <span class="absolute top-0 right-0 size-50 bg-white/20 rounded-full translate-x-1/2 -translate-y-1/2"></span>
+
+        <div class="z-10 flex flex-col gap-1">
+          <h2 class="text-lg font-semibold">Paris, France</h2>
+          <h3 class="text-sm font-thin">Mercredi, 16 Décembre 2024</h3>
+          <div class="my-2 flex gap-2">
+            <span class="text-5xl font-thin">22°</span>
+            <div class="flex flex-col gap-1">
+              <span class="text-sm font-semibold">Ensoleillé</span>
+              <span class="text-xs font-thin">Ressenti 25°</span>
+            </div>
+          </div>
+        </div>
+        <div class="z-10 flex flex-col items-end justify-center gap-2">
+          <i
+            class="m-2 size-20 fill-yellow-500 stroke-yellow-500"
+            data-lucide="sun"
+          ></i>
+          <span class="text-xs">Max: 26°C</span>
+          <span class="text-xs">Min: 18°C</span>
+        </div>
       </section>
+      
       <section class="flex gap-4">
         <!-- 4 cards stats -->
       </section>
